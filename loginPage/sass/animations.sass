@@ -1,0 +1,24 @@
+.container.sign-up-mode
+    .forms-container
+        .signin-signup
+            left: 25%
+            form
+                &.sign-in-form
+                    z-index: 1
+                    opacity: 0
+                &.sign-up-form
+                    z-index: 2
+                    opacity: 1
+                    
+    &:before
+        transform: translate(100%, -50%)
+        right: 52%
+    .panel
+        &.left-panel
+            pointer-events: none
+            .image, .content
+                transform: translateX(-800px)
+        &.right-panel 
+            pointer-events: all
+            .content, .image
+                transform: translateX(0px)

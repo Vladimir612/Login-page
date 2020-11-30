@@ -1,0 +1,35 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+:root
+    --primary-font-family: 'Poppins', sans-serif
+    --text-color-first: #fff
+    --text-color-second: #444
+    --text-color-third: #f0f0f0
+    --text-color-fourth: #333
+    --btn-back-color: #5995fd
+    --btn-back-hover-color: #4d84e2
+    --icon-color-input: #acacac
+    --icon-color-media-hover: #4481eb
+
+body, input
+    font-family: var(--primary-font-family)
+.btn
+    width: 150px
+    height: 49px
+    border: none
+    outline: none
+    border-radius: 2em
+    cursor: pointer
+    background-color: var(--btn-back-color)
+    color: var(--text-color-first)
+    text-transform: uppercase
+    font-weight: 600
+    margin: 10px 0
+    transition: .5s
+    letter-spacing: 2px
+    &:hover
+        background-color: var(--btn-back-hover-color)
+
